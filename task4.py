@@ -1,4 +1,8 @@
-array =  list(map(int, input().split())) 
+def sumElem(li): 
+	lis = []
+	for i in range(len(li)): 
+		lis.append(li[(i + 1) % len(li)] + li[(i + len(li) - 1) % len(li)])
+	return lis
 
-for i in range(len(array)):   
-	print(array[(i + 1) % len(array)] + array[(i + len(array) - 1) % len(array)], end=' ' ) 
+li=[1,3,5,6,10]
+print(sumElem(li))
