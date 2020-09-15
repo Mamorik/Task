@@ -6,7 +6,7 @@ def getNumber(string):
 	while i < lenght: 
 		StrInInt = '' 
 		Symbol = string[i] 
-		while 0 <= int(Symbol) <= 9:
+		while '0' <= Symbol <= '9':
 			StrInInt += Symbol
 			i += 1
 			if i < lenght: 
